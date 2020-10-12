@@ -38,6 +38,10 @@ public class EncodingFilter implements Filter {
         // place your code here
 
         // pass the request along the filter chain
+
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+
         chain.doFilter(request, response);
     }
 
